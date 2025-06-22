@@ -12,7 +12,7 @@
     padding: 0;
 }
 
-body {
+html {
     font-family: "Reckless Neue", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
     background-color: var(--bg-dark);
     color: var(--text);

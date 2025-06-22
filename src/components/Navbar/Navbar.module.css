@@ -15,12 +15,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Zilla Slab", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Alegreya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
     font-size: x-large;
     list-style: none;
 }
 
-.logoText,
+.logoText {
+    cursor: pointer;
+    height: 100px;
+    width: 50%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.navlist > a {
+    height: 90%;
+}
+
 .navlist > li > a{
     display: inline-block;
     padding: 10px 20px;
