@@ -17,7 +17,7 @@
     /* oklch */
     --bg-dark: oklch(0.1 0 191);
     --bg: #0b0b0b;
-    --bg-light: oklch(0.2 0 191);
+    --bg-light: #161616;
     --text: oklch(0.96 0 191);
     --text-muted: oklch(0.76 0 191);
     --highlight: oklch(0.5 0 191);
