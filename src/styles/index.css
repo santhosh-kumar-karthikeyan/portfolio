@@ -5,19 +5,24 @@
     src: url('/fonts/reckless-neue-regular.woff2') format('woff2'),
         url('/fonts/reckless-neue-regular.woff') format('woff');
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    font-family: "Reckless Neue", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
-    background-color: var(--bg-dark);
-    color: var(--text);
+html,
+body {
+    min-height: 100%;
     width: 100%;
-    height: 100%;
+    overflow-x: hidden;
+    font-size: clamp(14px, 1.5vw, 18px);
 }
 
-
-
+body {
+    font-family: 'Reckless Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    padding: 20px;
+}

@@ -1,43 +1,35 @@
+/* Default: desktop layout */
 .navbar {
-    padding: 47px 30px 30px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Zilla Slab", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: var(--bg);
-    font-weight: 700;
-    font-size: x-large;
     border: 1px solid var(--border-muted);
-}
-
-.navlist {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Alegreya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Zilla Slab", sans-serif;
     font-weight: 700;
     font-size: x-large;
-    list-style: none;
+    flex-direction: row;
 }
 
 .logoText {
-    cursor: pointer;
-    height: 100px;
-    width: 50%;
-    height: auto;
-    margin-top: 0px;
+    height: 70px;
 }
 
-.navlist > a {
-    height: 90%;
+.navlist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    font-size: x-large;
 }
 
-.navlist > li > a{
+.navlist li a {
     display: inline-block;
     padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 2px;
     text-decoration: none;
     color: var(--text);
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -46,4 +38,73 @@
 .navlist li a:hover {
     background-color: var(--bg-light);
     transform: scale(1.1);
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logoText {
+        height: 50px;
+    }
+
+    .hamburger {
+        display: flex;
+        align-self: flex-end;
+        margin-top: -40px;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .navlist li a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }

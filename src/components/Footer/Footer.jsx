@@ -3,11 +3,12 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.socials}>
         <div className={styles.iconContainer}>
           <img
             className={styles.icon}
             src="/assets/github.png"
-            alt="logo of github"
+            alt="GitHub logo"
           />
           <a
             className={styles.link}
@@ -17,38 +18,30 @@ export default function Footer() {
             Github
           </a>
         </div>
-      <div className={styles.iconContainer}>
-        <img
-          className={styles.icon}
-          src="/assets/linkedin.png"
-          alt="logo of linkedin"
-        />
-        <a
-          className={styles.link}
-          target="_blank"
-          href="https://www.linkedin.com/in/santhosh-k-kumar"
-        >
-          Linkedin
-        </a>
-      </div>
-      <section className={styles.iconContainer}>
-        <img
-          className={styles.icon}
-          src="/assets/copyright.svg"
-          alt="copyright-icon"
-        />
-        2025 Santhosh Kumar Karthikeyan
-      </section>
+        <div className={styles.iconContainer}>
+          <img
+            className={styles.icon}
+            src="/assets/linkedin.png"
+            alt="LinkedIn logo"
+          />
+          <a
+            className={styles.link}
+            target="_blank"
+            href="https://www.linkedin.com/in/santhosh-k-kumar"
+          >
+            LinkedIn
+          </a>
+        </div>
         <div className={styles.iconContainer}>
           <img
             className={styles.icon}
             src="/assets/reddit.png"
-            alt="reddit logo"
+            alt="Reddit logo"
           />
           <a
-            target="_blank"
             className={styles.link}
-            href="https://wwww.reddit.com"
+            target="_blank"
+            href="https://www.reddit.com"
           >
             Reddit
           </a>
@@ -57,16 +50,26 @@ export default function Footer() {
           <img
             className={styles.icon}
             src="/assets/instagram.png"
-            alt="instagram logo"
+            alt="Instagram logo"
           />
           <a
             className={styles.link}
             target="_blank"
-            href="https://www.instagram.com/chica_chica_slim_s4ndy"
+            href="https://www.instagram.com/"
           >
             Instagram
           </a>
         </div>
+      </div>
+
+      <div className={styles.copy}>
+        <img
+          className={styles.icon}
+          src="/assets/copyright.svg"
+          alt="copyright"
+        />
+        <span>2025 Santhosh Kumar Karthikeyan</span>
+      </div>
     </footer>
   );
 }
