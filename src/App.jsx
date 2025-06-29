@@ -1,15 +1,14 @@
-// import styles from "./App.module.css";
 import "./styles/index.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer"
 
 export default function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Hero />
-      <Footer />
+      <Footer/>
     </>
   );
 }

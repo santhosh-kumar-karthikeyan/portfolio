@@ -1,21 +1,11 @@
 .hero {
-    margin: 50px;
-    height: 100%;
+    margin: 10% 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.mainImage {
-    width: 500px;
-    height: 500px;
-    border-radius: 500px;
-    object-fit: cover;
-    object-position: center 20%;
-    background-color: var(--bg);
+    align-items: flex-start;
+    text-align: start;
+    gap: 20px;
 }
 
 .mutedText {
@@ -23,6 +13,31 @@
     font-weight: normal;
     margin-top: 20px;
     font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--bg-light);
+    border: 2px solid var(--border);
+    color: var(--text);
+    padding: 20px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.buttonPool {
+    display: flex;
+    gap: 50px;
+}
+
+.githubButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
