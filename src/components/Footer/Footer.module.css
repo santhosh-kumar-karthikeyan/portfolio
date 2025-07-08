@@ -8,8 +8,8 @@
     align-items: center;
     gap: 25px;
     box-shadow: 0 -1px 5px var(--text-muted);
-    position: fixed;
-    bottom: 20px;
+    position: sticky;
+    bottom: 0px;
 }
 
 .socials {
