@@ -1,12 +1,45 @@
-# React + Vite
+# Portfolio - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A portfolio built in react for showcasing my skills, projects, tools that I use, anything that feels as an icebreaker for a stranger to engage with me. Feel free to check out my projects, and discuss about them, suggest recommendations, raise issues.
 
-Currently, two official plugins are available:
+## Run Locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the project
 
-## Expanding the ESLint configuration
+```bash
+  git clone https://github.com/santhosh-kumar-karthikeyan/portfolio.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Go to the project directory
+
+```bash
+  cd portfolio
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Roadmap
+
+- Mobile responsive design
+
+- Planning to add WYSIWYG support
+
+## Author
+
+[@Santhosh Kumar Karthikeyan](https://www.github.com/santhosh-kumar-karthikeyan)
+
+## Tech Stack
+
+**Client:** React, CSS Modules
+
+**Deployment:** Azure Static Web Apps, Github Actions
