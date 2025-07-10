@@ -1,0 +1,49 @@
+[
+  {
+    "id": 0,
+    "name": "Auto-Quiz",
+    "description": "An automatic quiz generator that given the topics needed to generate one, would get it from an inference model with an interactive manner, such that it evaluates the user too.",
+    "technologies": ["React", "HuggingFace Inference"],
+    "skills": [
+      "Web development",
+      "API",
+      "Azure ",
+      "GitHub Workflows"
+    ],
+    "ghLink": "https://github.com/santhosh-kumar-karthikeyan/AutoQuiz.git",
+    "liveLink" : "https://auto-quiz-delta.vercel.app/",
+    "imgSrc" : "/assets/auto-quiz-ss.png",
+    "type" : ["Live"]
+  },
+  {
+    "id": 1,
+    "name": "Kollywood.io",
+    "description": "Kollywood.io is a web-based multiplayer game inspired by table-top games. This backend powers the game, providing APIs for user authentication, game management, and matchmaking. It also includes WebSocket support for real-time gameplay. ",
+    "technologies": [
+      "Angular",
+      "Socket.io",
+      "JWT"
+    ],
+    "skills": ["Web development", "Networking"],
+    "ghLink": "https://github.com/santhosh-kumar-karthikeyan/Kollywood.io-frontend.git",
+    "liveLink":"kollywood.netlify.app",
+    "imgSrc": "/assets/kollywood-ss.png",
+    "type": ["Live"]
+  },
+  {
+    "id": 2,
+    "name": "Kollywood API",
+    "description": "An API with a mongo DB backend for persistence and TMBD API for fetching trending movies, Spotify Dev API for fetching songs of the needed movies. Socket.io's server side utilities assist the ones in the frontend website.",
+    "technologies": [
+      "Socket.io",
+      "Node.js",
+      "MongoDB",
+      "Express.js"
+    ],
+    "skills": ["Web development", "Networking"],
+    "ghLink": "https://github.com/santhosh-kumar-karthikeyan/Kollywood-backend.git",
+    "liveLink" : "https://backend-kollywood-io.onrender.com",
+    "imgSrc": "/assets/api-ss.png",
+    "type" : ["API"]
+  }
+]

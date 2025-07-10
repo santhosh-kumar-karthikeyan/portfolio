@@ -1,5 +1,14 @@
-.projects {
-    background-color: var(--bg);
-    color: var(--text);
-    font: inherit;
+.projectsBox {
+  background-color: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 5%;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
 }

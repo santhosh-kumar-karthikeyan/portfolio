@@ -1,16 +1,17 @@
 import "./styles/index.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
+import projects from "./utils/projects.json";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Projects projects={["proj1","proj2"]} />
-      <Footer/>
+      <Projects projects={projects} />
+      <Footer />
     </>
   );
 }

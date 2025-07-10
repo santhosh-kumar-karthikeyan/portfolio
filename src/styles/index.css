@@ -1,29 +1,30 @@
 @import "./palette.css";
-
+@import "tailwindcss";
 @font-face {
-    font-family: 'Reckless Neue';
-    src: url('/fonts/reckless-neue-regular.woff2') format('woff2'),
-        url('/fonts/reckless-neue-regular.woff') format('woff');
+  font-family: "Reckless Neue";
+  src: url("/fonts/reckless-neue-regular.woff2") format("woff2"),
+    url("/fonts/reckless-neue-regular.woff") format("woff");
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    min-height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    font-size: clamp(14px, 1.5vw, 18px);
-    height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: clamp(14px, 1.5vw, 18px);
+  height: 100%;
 }
 
 body {
-    font-family: 'Reckless Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: var(--bg-dark);
-    color: var(--text);
-    padding: 20px;
+  font-family: "Reckless Neue", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  padding: 20px;
 }
