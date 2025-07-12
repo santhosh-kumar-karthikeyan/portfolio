@@ -6,7 +6,8 @@ import NotFound from "./components/NotFound/NotFound";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
-  { path: "*", element: <NotFound/>}
+  { path: "/Home", element: <App /> },
+  { path: "*", element: <NotFound /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
