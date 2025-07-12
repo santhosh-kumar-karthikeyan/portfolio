@@ -1,107 +1,107 @@
 .navbar {
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg);
-    border: 2px solid var(--border);
-    font-family: "Zilla Slab", sans-serif;
-    font-weight: 700;
-    font-size: x-large;
-    flex-direction: row;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  border: 2px solid var(--border);
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+  flex-direction: row;
 }
 
 .logoText {
-    height: 70px;
+  height: 70px;
 }
 
 .navlist {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-    font-family: "Alegreya", serif;
-    font-weight: 700;
-    font-size: x-large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  font-size: x-large;
 }
 
 .navlist li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: var(--text);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .navlist li a:hover {
-    background-color: var(--bg-light);
-    transform: scale(1.1);
+  background-color: var(--bg-light);
+  transform: scale(1.1);
 }
 
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .bar {
-    height: 3px;
-    width: 100%;
-    background-color: var(--text);
-    border-radius: 2px;
-    transition: all 0.3s ease-in-out;
+  height: 3px;
+  width: 100%;
+  background-color: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .bar.open:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .bar.open:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .bar.open:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .logoText {
-        height: 50px;
-    }
+  .logoText {
+    height: 50px;
+  }
 
-    .hamburger {
-        display: flex;
-        align-self: flex-end;
-        margin-top: -40px;
-    }
+  .hamburger {
+    display: flex;
+    align-self: flex-end;
+    margin-top: -40px;
+  }
 
-    .navlist {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        margin-top: 10px;
-    }
+  .navlist {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
-    .showMenu {
-        display: flex;
-    }
+  .showMenu {
+    display: flex;
+  }
 
-    .navlist li a {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
+  .navlist li a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 }

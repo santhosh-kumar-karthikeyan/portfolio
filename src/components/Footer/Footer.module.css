@@ -1,88 +1,76 @@
 .footer {
-    width: 98%;
-    background-color: var(--bg-light);
-    font-size: 0.9rem;
-    padding: 30px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    box-shadow: 0 -1px 5px var(--text-muted);
-    bottom: 0px;
+  width: 98%;
+  background-color: var(--bg-light);
+  font-size: 0.9rem;
+  padding: 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 -1px 5px var(--text-muted);
+  bottom: 0px;
 }
 
 .socials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .iconContainer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .link {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 500;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
 }
 
 .link:visited {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 .copy {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--text-muted);
-    font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
-
 @media (max-width: 600px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
-        padding: 30px 20px;
-        margin-bottom: 0px;
-    }
+  .footer {
+    padding: 25px 15px 15px;
+    gap: 20px;
+    text-align: center;
+  }
 
-    .iconContainer {
-        width: 45%;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
+  .socials {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
 
-    .footer .iconContainer:nth-child(5) {
-        width: 100%;
-        order: 5;
-        margin-top: 20px;
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        justify-content: center;
-    }
+  .iconContainer {
+    justify-content: center;
+    gap: 12px;
+  }
 
-    .footer .icon {
-        width: 24px;
-        height: 24px;
-    }
+  .link {
+    font-size: 1rem;
+  }
 
-    .link {
-        font-size: 0.95rem;
-    }
-
-    .footer {
-        flex-wrap: wrap;
-    }
+  .copy {
+    font-size: 0.85rem;
+    justify-content: center;
+  }
 }
