@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -13,8 +14,7 @@ export default function Navbar() {
       <button
         className={styles.hamburger}
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
         <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
         <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
@@ -22,34 +22,34 @@ export default function Navbar() {
 
       <ul className={`${styles.navlist} ${isOpen ? styles.showMenu : ""}`}>
         <li>
-          <a href="/Home" onClick={() => setIsOpen(false)}>
+          <Link to="/Home" onClick={() => setIsOpen(false)}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/Projects" onClick={() => setIsOpen(false)}>
+          <Link to="/Projects" onClick={() => setIsOpen(false)}>
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/Tools" onClick={() => setIsOpen(false)}>
+          <Link to="/Tools" onClick={() => setIsOpen(false)}>
             Tools
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/Certifications" onClick={() => setIsOpen(false)}>
+          <Link to="/Certifications" onClick={() => setIsOpen(false)}>
             Certifications
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/About" onClick={() => setIsOpen(false)}>
+          <Link to="/About" onClick={() => setIsOpen(false)}>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/Contact" onClick={() => setIsOpen(false)}>
+          <Link to="/Contact" onClick={() => setIsOpen(false)}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
